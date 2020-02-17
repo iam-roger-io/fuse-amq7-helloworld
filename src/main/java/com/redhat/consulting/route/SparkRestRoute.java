@@ -22,8 +22,13 @@ public class SparkRestRoute extends RouteBuilder {
 	public void configure() throws Exception {
 
 		
-		//
-		
+		/**
+		 * This web service POST send a message to AMQ7
+		 * 
+		 * url: http://127.0.0.1:8082/rest/amq7/sendmessage
+		 * method:POST  request body: {	"message":"Hello"  } 
+		 * 
+		 */
 		restConfiguration()
 				.component("spark-rest").contextPath("rest").port(8082) 
 				.bindingMode(RestBindingMode.json)
