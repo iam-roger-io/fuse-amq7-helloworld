@@ -80,7 +80,7 @@ public class SparkRestRoute extends RouteBuilder {
 		
 
 		/**
-		 * The address has 2 queues: foo1 and foo1. 
+		 * The address has 2 queues: foo1 and foo2. 
 		 * This route receive the messages from queue foo2
 		 */
 		from("amqp:foo1").autoStartup(true)
